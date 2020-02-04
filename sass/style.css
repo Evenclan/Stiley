@@ -12,21 +12,25 @@ html {
 /* Variables */
 /* Global */
 section {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
+}
+
+section:first-of-type {
+  margin-bottom: 100px;
 }
 
 section:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 60px;
 }
 
 .row {
-  margin-top: 40px;
+  margin: 0;
 }
 
 .container {
   margin: auto;
   text-align: center;
-  width: 1000px;
+  max-width: 1000px;
 }
 
 /* Fonts Awesome */
@@ -42,11 +46,20 @@ section:last-of-type {
   margin-bottom: 12px;
 }
 
+.fab {
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 7px;
+}
+
+/* nav */
 .col-md-4 {
   padding: 0 15px;
 }
 
-/* nav */
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +89,6 @@ section:last-of-type {
   font-size: 1.6rem;
   font-family: Comic Sans MS, Comic Sans, cursive;
   margin-left: 20px;
-  margin-top: 8px;
 }
 
 .nav li {
@@ -84,9 +96,9 @@ section:last-of-type {
   font-size: 0.9rem;
   font-weight: 600;
   color: white;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-top: 20px;
-  padding: 0 6px;
+  padding: 0 17px;
 }
 
 /* header */
@@ -103,19 +115,19 @@ section:last-of-type {
 .header-inner {
   text-align: center;
   color: white;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 .title {
   font-size: 4.5rem;
   font-weight: 700;
-  margin-bottom: 46px;
+  margin-bottom: 35px;
 }
 
 .subtitle {
   font-size: 2.4rem;
   font-weight: 900;
-  margin: 26px 0;
+  margin-bottom: 30px;
 }
 
 .service-title {
@@ -151,7 +163,7 @@ section:last-of-type {
   display: inline-block;
   background-color: #aaff3b;
   border-radius: 2px;
-  padding: 24px 62px;
+  padding: 22px 64px;
   font-size: 16px;
   color: #204066;
   -webkit-transition: background-color 0.4s ease;
@@ -173,9 +185,9 @@ section:last-of-type {
 .card-body {
   background: white;
   padding: 10px 0 20px 0;
-  max-width: 290px;
+  min-width: 290px;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .card-subtitle {
@@ -185,17 +197,17 @@ section:last-of-type {
 }
 
 .rights {
-  margin: 5px;
+  margin-left: 30px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-weight: 600;
-  font-size: 22px;
-  margin-right: 250px;
+  font-size: 14px;
+  margin-right: 130px;
 }
 
 /* Media Querries */
-@media (max-width: 1200px) {
+@media (max-width: 790px) {
   .row-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -205,6 +217,15 @@ section:last-of-type {
   .rights {
     margin: auto;
     margin-bottom: 10px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+  }
+  .card-body, .card-img {
+    max-width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */
