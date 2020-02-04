@@ -98,10 +98,8 @@ section:last-of-type {
   background-image: url("../images/header-image.jpeg");
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url("../images/header-image.jpeg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/header-image.jpeg");
-  height: 72vh;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .header-inner {
@@ -161,6 +159,9 @@ section:last-of-type {
   color: #204066;
   -webkit-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
+  margin-bottom: 160px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -214,6 +215,7 @@ section:last-of-type {
   }
   .rights {
     margin: auto;
+    margin-bottom: 15px;
   }
   .title {
     font-size: 2.5rem;
@@ -235,6 +237,9 @@ section:last-of-type {
     height: 5px;
     background-color: white;
     margin: 6px 2px;
+  }
+  section:last-of-type {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
