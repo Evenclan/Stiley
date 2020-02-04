@@ -5,9 +5,14 @@
     text-decoration: none;
 }
 
+/* font-family: 'Passion One', cursive;
+font-family: 'Roboto Slab', serif; */
+
 html {
     scroll-behavior: smooth;
   }
+
+
 
 /* Variables */
 
@@ -26,10 +31,6 @@ section:first-of-type {
 
 section:last-of-type {
     margin-bottom: 60px;
-}
-
-.row {
-    margin: 0;
 }
 
 .container {
@@ -71,12 +72,6 @@ section:last-of-type {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-}
-
-.nav-button {
-    color: white;
-    border-spacing: 4px 4px;
-    position: relative;
 }
 
 .nav-button:hover {
@@ -121,15 +116,17 @@ section:last-of-type {
 }
 
 .title {
-    font-size: 4.5rem;
-    font-weight: 700;
+    font-size: 4.6rem;
+    font-weight: 600;
     margin-bottom: 35px;
 }
 
 .subtitle {
     font-size: 2.4rem;
-    font-weight: 900;
+    font-weight: 400;
     margin-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+
 }
 
 .service-title {
@@ -200,6 +197,12 @@ section:last-of-type {
     margin-top: 10px;
 }
 
+/* Footer */ 
+
+.row-footer {
+    margin: 35px 0;
+}
+
 .rights {
     margin-left: 30px;
     align-self: center;
@@ -210,14 +213,12 @@ section:last-of-type {
 
 /* Media Querries */
 
-@media (max-width: 790px) {
+@media (max-width: 890px) {
     .row-footer {
         flex-direction: column;
     }
-    
     .rights {
         margin: auto;
-        margin-bottom: 10px;
     }
     .title {
         font-size: 2.5rem;
@@ -227,5 +228,17 @@ section:last-of-type {
     }
     .card-body, .card-img {
         max-width: 70%;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav ul {
+        margin-right: 50px;
+    }
+    .hamb {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 2px;
     }
 }
